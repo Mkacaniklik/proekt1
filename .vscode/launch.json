@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open proekkt1.html",
+            "file": "c:\\Users\\mkaca\\OneDrive\\Documents\\Martina Fakultet\\treta godina\\petti semestar\\Основи на Web програмирање\\вежби хтмл\\proekkkk\\.git\\proekt1\\proekkt1.html"
+        }
+    ]
+}

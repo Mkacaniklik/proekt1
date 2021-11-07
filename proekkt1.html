@@ -1,231 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta name="viewport" content="="width=device-width,initial-scale=1.0">
 <meta charset = "utf-8">
 <title>Proekt</title>
+<link rel="stylesheet"  type="text/css"  href="proekt1.css">
+<link rel="icon"  type="image/png" sizes="16×16" href="logomy.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    *   {
-        box-sizing: border-box; 
-        }
 
-    
-    header{
-          color:silver;
-          font-family:Comic Sans MS;
-          text-align:left;
-         }
-    
-	body{
-          font-family:Comic Sans MS;
-		 
-		  border-style:solid;
-          border-color:purple;
-	      border:20 px;
-          margin:10 px;
-		  padding:20 px;
-         }
-		
-		
-	.button{
-		 background-color:none;
-	     font-family:Comic Sans MS;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-         margin: 4px 2px;
-         transition: 0.2s;
-         cursor:pointer;
-	     width:200px;
-	}
-	
-	
-	.button1{
-	      border:5px solid;
-	      border-color:indigo;
-	      
-	}
-	
-    fieldset{
-	margin:5px;
-		
-		 border-color:indigo;
-		 }
-     
-	img {
-          width:15%;
-		  height:20%;
-         }
-		
-    .column {
-         float: left;
-         width: 33.33%;
-         padding: 5px;
-        }
-    
-	.column1 {
-         float: left;
-         width: 50%;
-         padding: 5px;
-         }
-    .column2 {
-         float: left;
-         width: 20%;
-         padding: 5px;
-         }
-
-    .row::after {
-         content: "";
-         clear: both;
-         display: table;
-         }
-	
-	textarea{
-	     width:400px;
-	     height:100 px;
-	     padding:2%;
-	     font:1.4em/1.6em cursive;
-	     background-color:pink;
-	}
-	
-	.sicon1{
-		 width:100px;
-		 color:deeppink;
-		 transition:0.2s;
-		 text-decoration: none;
-		 }
-		 
-	 .sicon1:hover{
-	     color:purple;
-	 }
-	 
-	  .sicon2{
-	      width:100px;
-		  color:blue;
-		  transition:0.2s;
-		  text-decoration: none;
-		 }
-		 
-	 .sicon2:hover{
-	     color:indigo;
-	 }
-</style>
 </head>
 
-  <body style="border-color:silver;border:15 px;background-image:url(IMG_0076.PNG);">
-    <article>
-      <header>
-        <button class="button button1" style="color:indigo;">My profile</button>
-		<div class="row">
-		<div class="column2">
-		
-         <img src="IMG_20180720_130823_300.jpg" alt="Avatar;" style="border-radius:50%; width:50%;border: 5px solid white;margin-left:40px;">
-	     
-		 </div>
-		 <div class="column">
-		 <br>
-		 <br>
-		 <br>
-		 <h2 style="text-align:bottom-left; width:100%">Мартина Качаниклиќ</h2>
-		  </div>
-		   </div>
-		<hr>
-      </header>
-    </article>
-        <h3 style="color:silver;margin-left:20px;">Index:</h3>
-            <p style="color:indigo;margin-left:20px;"><b>163/2019</b></p>
-        <h3 style="color:silver;margin-left:20px;">School:</h3>
-            <p style="color:indigo;margin-left:20px;"><b>Faculty Of Electrical Engineering & Information Technologies</b></p>
-
-<br>
-<hr >
-<div class="row">
-  <div class="column1">
-  
-  <fieldset style="width:70%;border-width:10px solid;">
-  <legend style=" text-align:bottom;color:indigo;":>GALERY</legend>
-     
-
-	 <div class="row">
-       
-	   <div class="column">
-          <img src="103996004_280363193345454_3250802862473728392_n.jpg" alt="picture1" style="width:70%">
-       </div>
-      
-	  <div class="column">
-          <img src="103980657_551944708829409_3114548319772442193_n.jpg" alt="picture1" style="width:100%" >
-       </div>
-       
-	   <div class="column">
-          <img src="104000556_575140773144674_793265601168507094_n.jpg" alt="picture1" style="width:100%">
-       </div>
-     
-       <div class="column">
-          <img src="IMG_20180420_114558.jpg" alt="picture1" style="width:100%">
-       </div>
-      
-	  <div class="column">
-          <img src="103981579_3146783408723523_2206762549144651962_n.jpg" alt="picture1" style="width:70%">
-       </div>
-      
-	  <div class="column">
-          <img src="IMG_20180418_101451.jpg" alt="picture1" style="width:100%">
-       </div>
-       
-	   <div class="column">
-          <img src="20211026_154059.jpg" alt="picture1" style="width:100%">
-       </div>
-	   
-	   <div class="column">
-          <img src="20211026_153501.jpg" alt="picture1" style="width:100%">
-       </div>
-	   
-	   <div class="column">
-          <img src="20210921_145918.jpg" alt="picture1" style="width:100%">
-       </div>
-  
+  <body>
+<div id="hero">
+   <div class="navbar">
+      <img src="profilna.jpg" style="width: 100px;height: auto;border-radius: 50%;margin-left: 90px;margin-top: 100px;"class="logo">
+      <div class="user">
+         <button type="button" style="margin-right: 30px;"><a class="sicon3" href="#" ><ion-icon name="planet" size="large" ></ion-icon></a></button>
+         <button type="button" style="margin-right: 30px;"><a class="sicon3" href="galerija.html" ><ion-icon name="images" size="large" ></ion-icon></a></button>
+         <div class="dropdown">
+         <button type="dropbth" style="margin-right: 30px;"><a class="sicon3" href="#" ><ion-icon name="heart" size="large"></ion-icon>
+            <div class="dropdown-content">
+               <a class="sicon3" href="muzika.html" ><ion-icon name="musical-notes"></ion-icon></a>
+            <a class="sicon3" href="film-serii.html" ><ion-icon name="film-sharp"></ion-icon></a>
+         
+            <a class="sicon3" href="book.html" ><ion-icon name="book-sharp"></ion-icon></a>
+                <a class="sicon3" href="umetnost.html" ><ion-icon name="color-palette"></ion-icon></a>
+         </div>
+         </a>
+         </button>
+         </div>
+         <button type="button" style="margin-right: 30px;"><a class="sicon3" href="contakt.html" ><ion-icon name="call" size="large" ></ion-icon></a></button>
+   </div>
 </div>
-   </fieldset>
+
+<div class="container">
+   <div class="info">
+      <h2>Мартина Качаниклиќ</h2><br>
+      <p>Студент на Факултет за електротехника и информациски технологии.</p>
    </div>
-   
-   <div class="column1">
-   <fieldset style="border:20 px; border-style:solid;">
-   <legend style="color:indigo;">WHAT I LIKE</legend>
-   <div class="row">
-       
-	   <div class="column1">
-   <iframe src="file:///C:/Users/mkaca/OneDrive/Documents/Martina%20Fakultet/treta%20godina/petti%20semestar/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8%20%D0%BD%D0%B0%20Web%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5/%D0%B2%D0%B5%D0%B6%D0%B1%D0%B8%20%D1%85%D1%82%D0%BC%D0%BB/muzik/muzika.html"   style="width:100%;"></iframe>
-      </div>
-   <div class="column1">
-   <iframe src="file:///C:/Users/mkaca/OneDrive/Documents/Martina%20Fakultet/treta%20godina/petti%20semestar/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8%20%D0%BD%D0%B0%20Web%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5/%D0%B2%D0%B5%D0%B6%D0%B1%D0%B8%20%D1%85%D1%82%D0%BC%D0%BB/fiml/film.html"  style="width:100%;"></iframe>
-      </div>
-   <div class="column1">
-   <iframe src="file:///C:/Users/mkaca/OneDrive/Documents/Martina%20Fakultet/treta%20godina/petti%20semestar/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8%20%D0%BD%D0%B0%20Web%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5/%D0%B2%D0%B5%D0%B6%D0%B1%D0%B8%20%D1%85%D1%82%D0%BC%D0%BB/books/Books.html" style="width:100%;"></iframe>
-      </div>
-	  <div class="column1">
-	  <iframe src="file:///C:/Users/mkaca/OneDrive/Documents/Martina%20Fakultet/treta%20godina/petti%20semestar/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8%20%D0%BD%D0%B0%20Web%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5/%D0%B2%D0%B5%D0%B6%D0%B1%D0%B8%20%D1%85%D1%82%D0%BC%D0%BB/serii/series.html" style="width:100%;"></iframe>
-	  </div>
+</div>
+
+
+
+
+<div id = "footer">
 	
-	  <iframe src="file:///C:/Users/mkaca/OneDrive/Documents/Martina%20Fakultet/treta%20godina/petti%20semestar/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8%20%D0%BD%D0%B0%20Web%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5/%D0%B2%D0%B5%D0%B6%D0%B1%D0%B8%20%D1%85%D1%82%D0%BC%D0%BB/art/art.html" style="width:100%;height:300px;"></iframe>
-	  
-      </div>
-   </fieldset>
-   </div>
-   </div>
-   <hr >
-   <form action="http://www.deitel.com" method="post">
-   
-   <textarea name="comments" id="comments" placeholder="Leve your thoughts about the website here..."></textarea><br>
-   
-   <input type="submit" style="font-family:verdana;font-size:14px;border:5px solid pink; cursor:pointer;">
-   </form>
-      <hr >
-<footer>
-     
-	 <p>Author: Мартина Качаниклиќ</p>
-     <p>E-mail:<a href="mailto:mkacaniklik@gmail.com" style="color:deeppink;"> mkacaniklik@gmail.com </a></p>
-	 <p>Social media:
+
          <a class="sicon1" href="https://www.instagram.com/mkacaniklik/" target="_blank" >
             <ion-icon name="logo-instagram" size="large" ></ion-icon>
          </a>
@@ -234,9 +54,10 @@
             <ion-icon name="logo-facebook" size="large" ></ion-icon>
          </a>
      </p>
-</footer>
+   </div>
          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 </html>
