@@ -317,69 +317,92 @@ button:hover{
         margin: auto;
         margin-top: 30px;
     }
-    .button1{
-        background: transparent;
-        outline: none;
-        border:2px solid rgb(126, 200, 223);
-      border-radius: 20px;
-        color:  rgb(126, 200, 223);
-        font-size: 12 px;
-        font-weight: bold;
-        cursor: pointer;
-        margin-left: 0px;
-        position:fixed;
-       
-    }
-    .button1:hover {
-       background-color: white;
-       border-color:gray ;
-    }
+   
+ 
     .pozadina{
         background-color: rgba(255, 181, 215, 0.233);
     }
-   
-    .drag-area{
-        border: 2px dashed #fff;
-        height: 500px;
-        width: 700px;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+
+  html,body{
+        display: grid;
+        height:100%;
+        place-items: center;
+        text-align: center;
+    }
+
+      .rate {
+        float: left;
+        height: 46px;
+        padding: 0 10px;
+    }
+    .rate:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+    }
+    .rate:not(:checked) > label {
+        float:right;
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:30px;
+        color:#ccc;
+    }
+    .rate:not(:checked) > label:before {
+        content: '★ ';
+    }
+    .rate > input:checked ~ label {
+        color: #ffc700;    
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;  
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+    
+      .center {
+        height:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+      
       }
-      .drag-area.active{
-        border: 2px solid #fff;
+      .form-input {
+        width:350px;
+        padding:20px;
+        background:#fff;
+        box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+                    3px 3px 7px rgba(94, 104, 121, 0.377);
       }
-      .drag-area .icon{
-        font-size: 100px;
-        color: #fff;
+      .form-input img {
+        width:100%;
+        display:none;
+        margin-bottom:30px;
       }
-      .drag-area header{
-        font-size: 30px;
-        font-weight: 500;
-        color: #fff;
+      .form-input input {
+        display:none;
       }
-      .drag-area span{
-        font-size: 25px;
-        font-weight: 500;
-        color: #fff;
-        margin: 10px 0 15px 0;
+      
+      .form-input label {
+        display:block;
+        width:45%;
+        height:45px;
+        margin-left: 25%;
+        line-height:50px;
+        text-align:center;
+        background:#1172c2;
+        color:#fff;
+        font-size:15px;
+        font-family:"Open Sans",sans-serif;
+        text-transform:Uppercase;
+        font-weight:600;
+        border-radius:5px;
+        cursor:pointer;
       }
-      .drag-area button{
-        padding: 10px 25px;
-        font-size: 20px;
-        font-weight: 500;
-        border: none;
-        outline: none;
-        background: #fff;
-        color: #5256ad;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .drag-area img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-      }
+      
