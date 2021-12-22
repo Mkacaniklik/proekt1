@@ -7,7 +7,24 @@
 <link rel="stylesheet"  type="text/css"  href="proekt1.css">
 <link rel="icon"  type="image/png" sizes="16×16" href="logomy.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<style>
+   table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 70%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        tr:nth-child(even) {
+  background-color: #dddddd;
+}
+       
+      
+</style>
 </head>
 
   <body>
@@ -34,15 +51,33 @@
          <button type="button" style="margin-right: 30px;"><a class="sicon3" href="contakt.html" ><ion-icon name="call" size="large" ></ion-icon></a></button>
    </div>
 </div>
-</div>
-<fieldset style="border:solid white 5px;border-radius: 20px;padding: 20px;backdrop-filter: blur(10px);width: 100%;">
+
+
+
+<fieldset style="border:solid white 5px;border-radius: 20px;padding: 20px;backdrop-filter: blur(10px);width: 50%;margin-left: 20%;">
     <legend style="color:rgb(255, 255, 255);">Анкета</legend>
-     <label for="fname" style="color: white;">First name:</label>
-     <input type="text" id="fname" name="fname" size="25" maxlength="30"><br><br>
-     <label for="lname"  style="color: white;">Last name:</label>
-     <input type="text" id="lname" name="lname"size="25" maxlength="30"><br><br>
-     <p  style="color: white;">Оценете ја странава</p>
-     <div class="rate" >
+    <p >ИМЕ:</p> <input type="proizvod" id="proizvod"  >
+    <p >ПРЕЗИМЕ:</p> <input type="kolku" id="kolku"  >
+    <p >ОЦЕНА:</p> <input type="naracka" id="naracka">
+     <br>
+    <input type="submit" id="submit" onclick="update()"  ><br>
+
+    <table id="table" style="margin-left: 100px;" >
+        <thead>
+        <tr>
+          <th>ИМЕ</th>
+          <th>ПРЕЗИМЕ</th>
+          <th>ОЦЕНА</th>
+        </tr>
+        <tbody id="myTable">
+            <tr>
+              <!--<td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>-->
+            </tr>
+        </thead>
+      </table>
+   <!---- <div class="rate" id="rat" >
         <input type="radio" id="star5" name="rate" value="5" />
         <label for="star5" title="text">5 stars</label>
         <input type="radio" id="star4" name="rate" value="4" />
@@ -53,21 +88,45 @@
         <label for="star2" title="text">2 stars</label>
         <input type="radio" id="star1" name="rate" value="1" />
         <label for="star1" title="text">1 star</label>
-      </div><br>
-      <input style="bottom: 0;right: 0;" type="submit" value="SEND">
+      </div><br>-->
+    
  </fieldset>
+ <br>
+
+ <script>
+   function update(){
+    var what=document.getElementById('proizvod').value;
+var how=document.getElementById('kolku').value;
+var num=document.getElementById('naracka').value;
+if(num>5||num<1){document.prompt('непостоецка оцена внесена');}
+    var table=document.getElementById('table');
+var row=table.insertRow();
+
+var whatcell=row.insertCell(0);
+var howcell=row.insertCell(1);
+var numcell=row.insertCell(2);
+
+whatcell.innerHTML=what;
+howcell.innerHTML=how;
+numcell.innerHTML=num;
+document.getElementById('proizvod').value="";
+document.getElementById('kolku').value="";
+document.getElementById('naracka').value="";
+}
+</script>
+</div>
+
 <div id="footer">
-<div class="g" style="margin-right:450px;">
-    <a class="sicon1" href="https://www.instagram.com/mkacaniklik/" target="_blank" >
+
+    <a class="sicon1" href="https://www.instagram.com/mkacaniklik/" target="_blank"  style="margin-left:30px;" >
        <ion-icon name="logo-instagram" size="large" ></ion-icon>
     </a>
  
     <a class="sicon2" href="https://www.facebook.com/mkacaniklik/" target="_blank">
        <ion-icon name="logo-facebook" size="large" ></ion-icon>
     </a>
- </div>
- </div>
 
+ </div>
  
  
  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

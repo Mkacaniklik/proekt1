@@ -8,10 +8,10 @@
 <link rel="icon"  type="image/png" sizes="16×16" href="logomy.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-  <body style="color: rgba(143, 81, 143,0.7);">
+  <body >
 <div class="header">
    <div class="navbar">
       <img src="profilna.jpg" style="width: 100px;height: auto;border-radius: 50%;"class="logo">
@@ -36,114 +36,86 @@
             <button type="button" style="margin-right: 30px;"><a class="sicon3" href="contakt.html" ><ion-icon name="call" size="large" ></ion-icon></a></button>
    </div>
 </div>
-<div class="naslov" style="border: solid;border-color: rgb(255, 255, 255);width: 50%;margin-left:300px;backdrop-filter: blur(10px);">
+<div class="naslov" style="border: solid;border-color: rgb(255, 255, 255);backdrop-filter: blur(10px);width: 50%;margin-left:350px">
    <h1>Добредојдовте</h1>
    <p>во мојата галерија со слики</p>
 </div>
 </div>
-
-<section class="pozadina">
-<section class="knigi" >
-   <h1>Gallery</h1>
-  
-     <div class="row">
-         <div class="column"  style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-            <img src="od.jpg" alt="picture1" style="width:100%" >
-            <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-            <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-         </div>
-        
-      <div class="column"  style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-            <img src="od2.jpg" alt="picture1" style="width:100%" >
-          <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-          <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-         
-         </div>
-         
-        <div class="column" style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-            <img src="marti.jpg" alt="picture1" style="width:100%" >
-          <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-          <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-         
-           
-         </div>
-         </div>
-
-      <div class="row">
-
-        <div class="column" style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-            <img src="IMG_20180420_114558.jpg" alt="picture1" style="width:100%;" >
-         
-        <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-        <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-         </div>
-        
-       
-        <div class="column"  style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-         <img src="20210921_145918.jpg" alt="picture1" style="width:100%">
-        <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-        <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-      
-         </div>
-        
-        <div class="column"  style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-            <img src="IMG_20180418_101451.jpg" alt="picture1" style="width:100%">
-          <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-          <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-           
-         </div>
-         </div>
-         <div class="row">
-         <div class="column"  style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);"> 
-            <img src="mk2.jpg" alt="picture1" style="width:100%">
-           <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-           <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
+<div class="pozadina">
+   <div class="knigi">
+      <div class="red" style="display: flex;">
+   <div class="border" style="width:40%;margin-left: 5%;padding: 5px;">
+      <img src="od.jpg" style="width: 70%;">
+      <button style="color: burlywood;display: flex;" onclick="like(this)" id="kopce">LIKE 0</button>
+      <input id="myInput" type="text" placeholder="Search..">
+      <p style="display: flex;">Comment: <input type="proizvod" id="proizvod" placeholder="Hi...." >
+     <input type="submit" id="submit" onclick="update()" ></p>
+      <table id="myTable">
+         <thead>
+             <tr>
+               <th>
+               </th>
+               <th></th>
+             </tr>
+         </thead>
+     </table>
+     
+   </div>
+   <div class="border" style="width:40%;margin-left: 10%;padding: 5px;">
+      <img src="marti.jpg" style="width: 70%;">
+     
+      <button style="color: burlywood;display: flex;" onclick="like(this)" id="kopce">LIKE 0</button>
+      <input id="myInput0" type="text" placeholder="Search..">
+      <br>
+      <p style="display: flex;">Comment: <input type="proizvod" id="proizvod0" placeholder="Hi...." >
+     <input type="submit" id="submit" onclick="update0()" ></p>
+       <table id="myTable0">
+         <thead>
+             <tr>
             
-         </div>
-         
-         <div class="column" style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-            <img src="mk4.jpg" alt="picture1" style="width:100%" >
-           <div class="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-           <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-           
-         </div>
-         <div class="column"  style=" box-shadow: 2px 2px 5px 5px rgba(121, 79, 117, 0.7);">
-          <img src="mk3.jpg" alt="picture1" style="width:100%">
-         
-      <div class="sicon4" id="sicon4"><ion-icon name="diamond-outline" size="large"></ion-icon></div>
-      <textarea name="comments" id="comments" placeholder="comments..."></textarea><br>
-            
-      
-         </div>
-         </div>
-      
-    
-      </section>
-      <div class="center">
-         <div class="form-input">
-         </div>
-       </div> 
-       <div class="preview">
-         <img id="file-ip-1-preview">
-       </div>
-       <label for="file-ip-1">Upload Image</label>
- <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-       <script>
-      function showPreview(event){
-         if(event.target.files.length > 0){
-           var src = URL.createObjectURL(event.target.files[0]);
-           var preview = document.getElementById("file-ip-1-preview");
-           preview.src = src;
-           preview.style.display = "block";
-         }
-       }
-      </script>
+             </tr>
+         </thead>
+     </table>
+     
+   </div>
+   </div>
+   <div class="red" style="display: flex;">
+      <div class="border" style="width:40%;margin-left: 5%;padding: 5px;">
+         <img src="mk2.jpg" style="width: 70%;">
+         <button style="color: burlywood;display: flex;" onclick="like(this)" id="kopce">LIKE 0</button>
+         <input id="myInput1" type="text" placeholder="Search..">
+         <p style="display: flex;">Comment: <input type="proizvod" id="proizvod1" placeholder="Hi...." >
+        <input type="submit" id="submit" onclick="update1()" ></p>
+         <table id="myTable1" >
+           <thead>
+                <tr>
+                  
+                </tr>
+            </thead>
+        </table>
+        
+      </div>
+      <div class="border" style="width:40%;margin-left: 10%;padding: 5px;">
+         <img src="mk3.jpg" style="width: 70%;">
+         <button style="color: burlywood;display: flex;" onclick="like(this)" id="kopce">LIKE 0</button>
+         <input id="myInput2" type="text" placeholder="Search..">
+         <p style="display: flex;">Comment: <input type="proizvod" id="proizvod2" placeholder="Hi...." >
+        <input type="submit" id="submit" onclick="update2()" ></p>
+         <table id="myTable2">
+            <thead>
+                <tr>
+                   
+                </tr>
+            </thead>
+        </table>
+        
+      </div>
+      </div>
+   </div>
 
+<div id="footer">
 
-<section class="knigi">
-<div class="footer" style="align-items: center;margin-right: 400px;">
-
-   <a class="sicon1" href="https://www.instagram.com/mkacaniklik/" target="_blank" >
+   <a class="sicon1" href="https://www.instagram.com/mkacaniklik/" target="_blank"style="margin-left:30px;"  >
       <ion-icon name="logo-instagram" size="large" ></ion-icon>
    </a>
 
@@ -151,10 +123,52 @@
       <ion-icon name="logo-facebook" size="large" ></ion-icon>
    </a>
 
-</div>
-</section>
-</section>
 
+
+</div>
+</div>
+<script src="komentari.js">
+
+</script>
+<script>
+   $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+              
+      });
+    });
+  });
+  $(document).ready(function(){
+    $("#myInput0").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable0").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+              
+      });
+    });
+  });
+  $(document).ready(function(){
+    $("#myInput1").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable1").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+              
+      });
+    });
+  });
+  $(document).ready(function(){
+    $("#myInput2").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#myTable2").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+              
+      });
+    });
+  });
+</script>
+    
          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
